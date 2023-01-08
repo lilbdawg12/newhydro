@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <title>Ramsay Farms</title>
+        <link rel="stylesheet" href="{% static 'first.css' %}">
+    </head>
+<body>
+    <table style="background-color:#33475b">
+   
+    <section>
+        <nav>
+            <ul>
+                <li><a class="active" href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact'%}">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </section>
+    <section>
+    <div class="container">
+        <div class="content">
+            <p>Website Is Under Maintenance</p>
+            <h1>Ramsay Farms <br><span>Launching</span></br> Soon</h1>
+            <a href="{% url 'contact' %}" class="hero-btn">Contact Us</a>
+        </section>
+    <!---BOTTOM OF THE PAGE-->
+   
+    <footer>
+        <p>Copyright 2023. All rights reserved.</p>
+      </footer>
+    
+
+
+
+</body>
+</html>

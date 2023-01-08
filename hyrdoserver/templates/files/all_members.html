@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <title>Ramsay Farms</title>
+        <link rel="stylesheet" href="{% static 'second.css' %}">
+        <link rel="stylesheet" href="{% static 'header2.css' %}">
+    </head>
+<body>
+    <section class='pic'>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a class="active" href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <div class='campus'>
+             <div class='text-box1'>
+                 <h1 class='pad'>
+                     About US
+                 </h1>
+                     <p class='pad1'>
+                     Ramsay Farms, located at 65 River Street, Jamestown, New York, is an up-and-coming indoor hydroponic farm. Our mission is to cultivate as many fresh fruits and vegetables as possible, helping a distressed area flourish again. Our facility will be run uniquely; by reverse engineering the classic greenhouse, net zero emissions will be achieved and maintained. 
+                     In the distant future, our goal is to have the facility become the largest indoor hydroponic warehouse in New York State, thanks to acquisitions and expansions. Upon the firm's success and output volumes met, we will generate a recognizable dent in NY State agriculture statistics.
+ 
+                     </p>
+                 </div>
+             <div class="text-box1">
+             <h1 class='pad'>
+                 Why Ramsay Farms?
+             </h1>
+             <p class='pad1'>
+                 Approximately 13% of people in New York State have access to good food daily. After learning this, further research was conducted, leading us to conclude that the United States is in a drought. Even when walking into grocery stores, you can see firsthand that the produce is rotting on the shelf. Although anecdotal, many can attest to this. Customers must go shopping on odd days when shipments are new to find fresh produce. 
+                 So we decided to take matters into our own hands; why should over 70% of the United States fruit and vegetable supply come from one state (California)? We had already purchased our facility and were unsure what to do with it, so we decided to convert it into a warehouse farm. Our team consists of advocates for self-sustainability, and our operating emission levels display this.
+ 
+             </p>
+ 
+                 </div>
+         </div>
+ 
+     </section>
+     
+     
+     <section class='allthem'>
+        
+         <div class='text-box3'>
+             <div class='pad2'>
+                 <h1>Founders</h1>
+                 </div>
+         <ol>
+             {% for x in person %}
+             <li><a><b>{{x.firstname}} {{x.lastname}}</b> <br>{{x.jobtype}}</br></a></li>
+             {% endfor %}
+         </ol>
+         </div>
+     </section>
+ 
+     <footer>
+         <p>Copyright 2023. All rights reserved.</p>
+       </footer>
+     
+    </section>
+ 
+ 
+ 
+</body>
+</html>

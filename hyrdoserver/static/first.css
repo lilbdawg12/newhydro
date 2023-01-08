@@ -1,0 +1,242 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.pager{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*this is for coming soon message*/
+.container{
+	
+    height: 100vh;
+    background: url("/static/images/hydrogif.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0, 8%;
+    backface-visibility: hidden;
+    color: white;
+    position: relative;
+    isolation: isolate;
+
+}
+.container:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: black;
+    opacity: .7;
+}
+
+.content{
+    
+    top:10%;
+    left:20%;
+   
+    color: #fff;
+    text-align: center;
+    padding: 200px 0px;
+}
+
+.content h1{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 10px 0 20px;
+}
+.content h1 span{
+    color: red;
+}
+
+/*Header*/
+nav{
+	background: #1c1c1f;
+    height: 5em;
+    position: relative    
+}
+nav ul{
+	float: center;
+	margin-right: 40px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)	
+}
+
+nav li{
+	display: inline-block;
+	margin: 0 8px;
+	line-height: 80px;   
+}
+
+nav a{
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	padding: 7px 50px;
+	border-radius: 20px;
+	border-right: solid transparent;
+    text-decoration: none;   
+}
+
+a.active,a:hover{
+	border: 1px solid white;
+	transition: .5s;
+	border-right: solid;
+}
+
+nav #icon {
+	color: whitesmoke;
+	font-size: 30px;
+	line-height: 80px;
+	float: right;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+/*Button*/
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1.5s;
+}
+.campus{
+    
+    margin: auto;
+    padding: 15px 30px;
+    grid-gap: 15px;
+
+    display: flex;
+}
+.text-box1 {
+    
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 15px;
+    width: 50%;
+}
+
+.pad{
+    padding: 20px 5px 15px;
+    text-align: center;
+
+}
+.pad1{
+    padding: 20px 15px 15px;
+}
+
+
+.membersection{
+    margin: auto;
+    
+    padding-top: 20px;
+    background-color: white;
+    
+}
+.text-box3{
+    
+    color: black;
+    border-radius: 10px;
+    justify-items: center;
+    font-size: 14px;
+    padding: 50px 30px;
+    border: 0.5em solid black;
+    
+    background-color: white;
+
+}
+.text-box3 ol{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    grid-gap: 5px;
+
+}
+
+.text-box3 ol li{
+    list-style: none;
+    display: inline-block;
+    width: calc(100% / 3);
+    height: 120px;
+    text-align: center;
+    line-height: 25px;
+    border:solid;
+}
+
+.pad2{
+    padding: 0px 5px 15px;
+    text-align: center;
+    font-size: 45px;
+
+
+}
+
+.allthem{
+    padding: 20px 5px 15px;
+    text-align: center;
+}
+
+
+body {
+    background: linear-gradient(to bottom right, rgb(172, 152, 152), rgb(68, 64, 64), rgb(101, 90, 90));
+    }
+
+.content p{
+    font-size: 25px;
+    color: #fff;
+    float: inline-end;
+    
+}
+
+footer {
+    background-color: #1c1c1f;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+  
+footer p {
+    margin: 0;
+  }
+
+@media only screen and (max-width: 600px) {
+    nav{
+        width: 570px;
+    }
+    body{
+        width: 570px;
+        height: 100vh;
+    }
+    .container{
+        
+        height: 1130px;
+
+    }
+    .content{
+        height: 100px;
+        padding: 400px 0px;
+    }
+}
